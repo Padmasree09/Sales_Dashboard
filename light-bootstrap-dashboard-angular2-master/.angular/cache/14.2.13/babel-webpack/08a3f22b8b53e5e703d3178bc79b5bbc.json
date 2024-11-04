@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nexports.addLeadingZeros = addLeadingZeros;\n\nfunction addLeadingZeros(number, targetLength) {\n  const sign = number < 0 ? \"-\" : \"\";\n  const output = Math.abs(number).toString().padStart(targetLength, \"0\");\n  return sign + output;\n}","map":null,"metadata":{},"sourceType":"script"}

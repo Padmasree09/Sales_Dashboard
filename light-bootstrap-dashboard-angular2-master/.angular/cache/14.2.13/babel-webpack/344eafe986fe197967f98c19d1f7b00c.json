@@ -1,0 +1,1 @@
+{"ast":null,"code":"\"use strict\";\n\nexports.normalizeDates = normalizeDates;\n\nvar _index = require(\"../constructFrom.cjs\");\n\nfunction normalizeDates(context, ...dates) {\n  const normalize = _index.constructFrom.bind(null, context || dates.find(date => typeof date === \"object\"));\n\n  return dates.map(normalize);\n}","map":null,"metadata":{},"sourceType":"script"}
